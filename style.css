@@ -26,7 +26,7 @@ nav {
 }
 
 ul.navigation {
-    display: inline-flex;
+    display: flex;
     gap: 10em;
     list-style: none;
     width: 100%;
