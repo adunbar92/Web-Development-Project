@@ -26,10 +26,11 @@ nav {
 }
 
 ul.navigation {
+display: inline-flex;
+gap: 10em;
 list-style: none;
 width: 100%;
 text-align: center;
-
 }
 
 .gallery{
