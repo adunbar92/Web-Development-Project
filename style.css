@@ -15,8 +15,6 @@ footer {
 
 nav {
     background-color:rgba(19, 226, 233, 0.527);
-    display: inline-block;
-    list-style: none;
     width: 100%;
     border: 2.5px;
     padding: 10px;
@@ -26,8 +24,8 @@ nav {
 }
 
 ul.navigation {
-    display: flex;
-    gap: 10em;
+    display: inline-flex;
+    gap: 5em;
     list-style: none;
     width: 100%;
     text-align: center;
