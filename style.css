@@ -13,8 +13,10 @@ footer {
     border-color: black;
 }
 
-.navigation {
+nav {
     background-color:rgba(19, 226, 233, 0.527);
+    display: flex;
+    list-style: none;
     width: 100%;
     border: 2.5px;
     padding: 20px;
@@ -23,8 +25,15 @@ footer {
     border-color: black;
 }
 
+ul.navigation {
+list-style: none;
+width: 100%;
+text-align: center;
+
+}
+
 .gallery{
-    list-style-type: none;
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
