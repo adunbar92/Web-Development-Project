@@ -26,14 +26,14 @@ nav {
 }
 
 ul.navigation {
-display: inline-flex;
-gap: 10em;
-list-style: none;
-width: 100%;
-text-align: center;
+    display: inline-flex;
+    gap: 10em;
+    list-style: none;
+    width: 100%;
+    text-align: center;
 }
 
-.gallery{
+.gallery {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -42,8 +42,8 @@ text-align: center;
 }
 
 .gallery img {
- min-height: auto;
- border-radius: 8px;   
+    min-height: auto;
+    border-radius: 8px;   
 }
 
 #main {
@@ -57,7 +57,6 @@ text-align: center;
 }
 
 .mainheader {
-
     background-color: rgb(1, 146, 165);
     width: 100%;
     border: 2.5px;
@@ -65,10 +64,9 @@ text-align: center;
     margin: 10px;
     border-style: solid;
     border-color: black;
-
 }
 
 body {
-background-image: url("/assets/background.jpg") ;
-width: 100%;
+    background-image: url("/assets/background.jpg") ;
+    width: 100%;
 }
