@@ -26,17 +26,18 @@ nav {
 ul.navigation {
     display: flex;
     flex-wrap: wrap;
-    gap: 5rem;
+    justify-content: space-between;
+    align-items: center;
     list-style: none;
-    width: 100%;
-    text-align: center;
+    width: 90%;
 }
 
 .gallery {
     list-style: none;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: .5rem;
     justify-content: flex-start;
 }
 
