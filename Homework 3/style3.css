@@ -23,6 +23,14 @@ nav {
     border-color: black;
 }
 
+@media (max-width: 768px) {
+.gallery{
+    grid-template-columns: 1fr
+}
+
+}
+
+
 ul.navigation {
     display: flex;
     flex-wrap: wrap;
