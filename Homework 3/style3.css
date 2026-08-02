@@ -24,10 +24,9 @@ nav {
 }
 
 ul.navigation {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
     list-style: none;
     width: 90%;
 }
@@ -35,19 +34,31 @@ ul.navigation {
 .gallery {
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     flex-wrap: wrap;
     gap: .5rem;
     justify-content: flex-start;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+ul.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+}
+
+@media (min-width: 768px) {
 .gallery {
-grid-template-columns: 1fr;
+grid-template-columns: 1fr 1fr;
+}
 }
 
+@media (min-width: 1200px) {
+.gallery {
+grid-template-columns: 1fr 1fr 1fr;
 }
-
+}
 
 .gallery img {
     min-height: auto;
