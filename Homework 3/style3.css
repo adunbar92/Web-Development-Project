@@ -5,20 +5,20 @@
 footer {
     text-align: center;
     background-color: #6bdbd6;
-    width: 99%;
+    width: 100%;
     border: 2.5px;
     padding: 20px;
-    margin: 10px;
+    margin: 0 auto 20px auto;
     border-style: solid;
     border-color: black;
 }
 
 nav {
     background-color:rgba(19, 226, 233, 0.527);
-    width: 99%;
+    width: 100%;
     border: 2.5px;
     padding: 10px;
-    margin: 10px;
+    margin: 0 auto 20px auto;
     border-style: solid;
     border-color: black;
 }
@@ -36,13 +36,15 @@ ul.navigation {
     place-items: center;
     list-style: none;
     gap: .5rem;
-    width: 99%;
+    width: 100%;
+    margin: 0 auto 20px auto;
 }
 
 @media (min-width: 768px) {
 ul.navigation {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     max-width: 95%;
 }
@@ -68,24 +70,26 @@ grid-template-columns: 1fr 1fr 1fr;
 
 #main {
     background-color: aqua;
-    width: 99%;
+    width: 100%;
     border: 2.5px;
     padding: 20px;
-    margin: 10px;
+    margin: 0 auto 20px auto;
     border-style: solid;
     border-color: black;
+    margin: 0 auto 20px auto;
 }
 
 .mainheader {
     background-color: rgb(1, 146, 165);
-    width: 99%;
+    width: 100%;
     border: 2.5px;
     padding: 20px;
-    margin: 10px;
+    margin: 0 auto 20px auto;
     border-style: solid;
     border-color: black;
 }
 
 body {
     background-image: url("assets/background.jpg") ;
+    padding: 20px;
 }
