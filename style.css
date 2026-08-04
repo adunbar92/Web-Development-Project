@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 60px;
+    margin: 0;
+}
+
+ul.homework-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    list-style: none;
+    gap: 16px;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    font-family: "inter", sans-serif;
+    font-size: 1.5rem;
+
+}
+
+a:visited {
+    color: rgb(176, 176, 255);
+}
+
+a:hover {
+    color: rgb(76, 0, 255);
+}
+
+.main {
+    background-color: rgba(0, 255, 255, 0.856);
+    width: 100%;
+    border: 4px;
+    padding: 16px;
+    margin: 0 auto 16px auto;
+    border-style: solid;
+    border-color: black;
+    min-height: 50vh;
+}
+
+h1 {
+    font-family: "lora", serif;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("assets/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
