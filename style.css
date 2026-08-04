@@ -23,7 +23,7 @@ a {
 }
 
 a:visited {
-    color: rgb(176, 176, 255);
+    color: rgb(5, 102, 45);
 }
 
 a:hover {
@@ -39,6 +39,7 @@ a:hover {
     border-style: solid;
     border-color: black;
     min-height: 50vh;
+    width: 75vw;
 }
 
 h1 {
