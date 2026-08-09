@@ -4,7 +4,7 @@
 
 footer {
     text-align: center;
-    background-color: rgba(19, 226, 233, 0.527);
+    background-color: rgba(5, 48, 49, 0.616);
     width: 100%;
     border: 2.5px;
     padding: 20px;
@@ -12,10 +12,11 @@ footer {
     border-style: solid;
     border-color: black;
     border-radius: 8px;
+    color: aliceblue;
 }
 
 nav {
-    background-color:rgba(19, 226, 233, 0.527);
+    background-color:rgba(5, 48, 49, 0.616);
     width: 100%;
     border: 2.5px;
     padding: 10px;
@@ -23,6 +24,15 @@ nav {
     border-style: solid;
     border-color: black;
     border-radius: 8px;
+}
+
+a {
+color: aliceblue;
+font-size: 1rem;
+}
+
+a:hover {
+color:rgb(142, 230, 236);
 }
 
 ul.navigation {
@@ -77,7 +87,7 @@ grid-template-columns: 1fr 1fr 1fr;
 }
 
 #main {
-    background-color: rgb(125, 224, 224);
+    background-color: rgb(36, 75, 75);
     width: 100%;
     border: 2.5px;
     padding: 20px;
@@ -85,10 +95,11 @@ grid-template-columns: 1fr 1fr 1fr;
     border-style: solid;
     border-color: black;
     border-radius: 8px;
+    color: aliceblue;
 }
 
 .mainheader {
-    background-color: rgb(1, 146, 165);
+    background-color: rgba(4, 102, 116, 0.692);
     width: 100%;
     border: 2.5px;
     padding: 20px;
@@ -96,6 +107,7 @@ grid-template-columns: 1fr 1fr 1fr;
     border-style: solid;
     border-color: black;
     border-radius: 8px;
+    color: aliceblue;
 }
 
 #main .content {
