@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+footer {
+    text-align: center;
+    background-color: #6bdbd6;
+    width: 100%;
+    border: 2.5px;
+    padding: 20px;
+    margin: 0 auto 20px auto;
+    border-style: solid;
+    border-color: black;
+}
+
+nav {
+    background-color:rgba(19, 226, 233, 0.527);
+    width: 100%;
+    border: 2.5px;
+    padding: 10px;
+    margin: 0 auto 20px auto;
+    border-style: solid;
+    border-color: black;
+}
+
+ul.navigation {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    list-style: none;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    list-style: none;
+    gap: .5rem;
+    width: 100%;
+    margin: 0 auto 20px auto;
+}
+
+@media (min-width: 768px) {
+ul.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 95%;
+}
+}
+
+@media (min-width: 768px) {
+.gallery {
+grid-template-columns: 1fr 1fr;
+}
+}
+
+@media (min-width: 1200px) {
+.gallery {
+grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+.gallery img {
+    vertical-align:middle;
+    border-radius: 1rem;
+    max-width: 100%;
+}
+
+#main {
+    background-color: aqua;
+    width: 100%;
+    border: 2.5px;
+    padding: 20px;
+    margin: 0 auto 20px auto;
+    border-style: solid;
+    border-color: black;
+}
+
+.mainheader {
+    background-color: rgb(1, 146, 165);
+    width: 100%;
+    border: 2.5px;
+    padding: 20px;
+    margin: 0 auto 20px auto;
+    border-style: solid;
+    border-color: black;
+}
+
+body {
+    background-image: url("assets/background.jpg") ;
+    padding: 20px;
+}
