@@ -4,13 +4,14 @@
 
 footer {
     text-align: center;
-    background-color: #6bdbd6;
+    background-color: rgba(19, 226, 233, 0.527);
     width: 100%;
     border: 2.5px;
     padding: 20px;
     margin: 0 auto 20px auto;
     border-style: solid;
     border-color: black;
+    border-radius: 8px;
 }
 
 nav {
@@ -21,6 +22,7 @@ nav {
     margin: 0 auto 20px auto;
     border-style: solid;
     border-color: black;
+    border-radius: 8px;
 }
 
 ul.navigation {
@@ -28,6 +30,7 @@ ul.navigation {
     grid-template-columns: 1fr;
     place-items: center;
     list-style: none;
+
 }
 
 .gallery {
@@ -37,7 +40,12 @@ ul.navigation {
     list-style: none;
     gap: .5rem;
     width: 100%;
-    margin: 0 auto 20px auto;
+    margin: 40px auto 20px auto;
+}
+
+h1, h2, h3{
+
+    text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -69,13 +77,14 @@ grid-template-columns: 1fr 1fr 1fr;
 }
 
 #main {
-    background-color: aqua;
+    background-color: rgb(125, 224, 224);
     width: 100%;
     border: 2.5px;
     padding: 20px;
     margin: 0 auto 20px auto;
     border-style: solid;
     border-color: black;
+    border-radius: 8px;
 }
 
 .mainheader {
@@ -86,6 +95,16 @@ grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto 20px auto;
     border-style: solid;
     border-color: black;
+    border-radius: 8px;
+}
+
+#main .content {
+    text-align: center;
+}
+
+.favorites {
+
+    list-style: none;
 }
 
 body {
