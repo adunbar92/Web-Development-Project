@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="style7.css">
+        <script src="script.js" defer></script>
+    </head>
+        <body>    
+            <header>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index7.html">Home Page</a></li>
+                        <li><a href="photo-gallery7.html">Photo Gallery</a></li>
+                    </ul>
+                </nav>
+                    <h1 class="mainheader">Alex's Cabinet of Curiosities</h1>
+            </header>
+            <main>
+                <section id="main">
+                    <article class="content">
+                    <p class="content"> On this page, you'll find a curated selection of Alex's favorite things.</p>
+                        <h2>A Treasure Trove of Interests</h2>
+                        <h3>In No Particular Order</h3>
+                            <ul class="favorites">
+                                <li> Favorite Book: John Dies at the End</li>
+                                <li> Favorite Movie: Logan Lucky</li>
+                                <li> Favorite TV Show: Supernatural</li>
+                                <li> Favorite Video Game: Baldur's Gate 3</li>
+                                <li> Favorite Music: Avenged Sevenfold</li>
+                                <li> Favorite Food: Steak</li>
+                            </ul>
+                    </article>
+                    <article class="contact">
+                        <form class="contact" action="mailto:adunbar2@my.campus.edu" method="post" enctype="text/plain">
+                            <fieldset> 
+                                <legend>Contact Form</legend>
+                                    <label for="name">Name:</label>
+                                        <input id="name" type="text" name="name" placeholder="Name" aria-describedby="name-empty" required>
+                                        <p id="name-empty" class="error-message"> Field is required. </p>                                        
+                                    <label for="email">Email:</label>
+                                        <input id="email" type="email" name="email" placeholder="Email" aria-describedby="email-invalid" required>
+                                        <p id="email-invalid" class="error-message"> Valid email is required. </p>
+                                    <label for="message">Message:</label>
+                                        <input id="message" name="message" placeholder="Your message here" aria-describedby="message-empty" required></input>
+                                        <p id="message-empty" class="error-message"> Field is required. </p>
+                                        <button type="submit">Submit</button>
+                                </fieldset>  
+                            </form>
+                    </article>
+                </section>
+            </main>   
+            <footer> 
+                <p class="footer"> Fixations are ongoing. Data is subject to change. </p>
+            </footer>
+        </body>
+</html>
