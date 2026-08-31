@@ -30,7 +30,18 @@
                                 <li> Favorite Music: Avenged Sevenfold</li>
                                 <li> Favorite Food: Steak</li>
                             </ul>
-                    </article>
+                        <form enctype="text/plain">
+                            <fieldset> 
+                                <legend>Add an Interest</legend>
+                                    <label>Add an Interest</label>    
+                                        <input id="add" type="text" name="add-item" placeholder="Add an Interest">
+                                     <span class="buttons">
+                                         <button id="add-item" type="button">Add Item</button>
+                                         <button id="del-item" type="button">Remove Item</button>
+                                    </span>
+                            </fieldset>
+                        </form>
+                        </article>
                     <article class="contact">
                         <form class="contact" action="mailto:adunbar2@my.campus.edu" method="post" enctype="text/plain">
                             <fieldset> 
@@ -44,7 +55,7 @@
                                     <label for="message">Message:</label>
                                         <input id="message" name="message" placeholder="Your message here" aria-describedby="message-empty" required></input>
                                         <p id="message-empty" class="error-message"> Field is required. </p>
-                                        <button type="submit">Submit</button>
+                                        <button class="submit" type="submit">Submit</button>
                                 </fieldset>  
                             </form>
                     </article>
