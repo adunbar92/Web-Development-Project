@@ -7,9 +7,9 @@ input.addEventListener("input", () => {
 });
 });
 
-const submitButton = document.querySelectorAll("button");
+const submitButtons = document.querySelectorAll("button");
 
-submitButton.forEach((button) => {
+submitButtons.forEach((button) => {
 button.addEventListener("click", () => {
     button.textContent= "Clicked!";   
 });
@@ -24,7 +24,7 @@ document.querySelector("#add-item").addEventListener("click", ()=> {
 
 document.querySelector("#del-item").addEventListener("click", ()=> {
     let lastItem = document.querySelector(".favorites li:last-child"); 
-if (lastItem) {
+    if (lastItem) {
     lastItem.remove();
 }
 });
