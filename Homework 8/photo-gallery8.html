@@ -10,8 +10,8 @@
             <header>
                 <nav>
                     <ul class="navigation">
-                        <li><a href="index7.html">Home Page</a></li>
-                        <li><a href="photo-gallery7.html">Photo Gallery</a></li>
+                        <li><a href="index8.html">Home Page</a></li>
+                        <li><a href="photo-gallery8.html">Photo Gallery</a></li>
                     </ul>
                 </nav>
                     <h1 class="mainheader">Photo Gallery</h1> 
@@ -32,19 +32,23 @@
                         </ul>
                     </article>
                     <article class="contact">
-                        <form class="contact" action="mailto:adunbar2@my.campus.edu" method="post" enctype="text/plain">
-                           <fieldset> 
-                                <legend>Contact Form</legend>
-                                    <label for="name">Name:</label>
-                                        <input id="name" type="text" name="name" placeholder="Name" aria-describedby="name-empty" required>
-                                        <p id="name-empty" class="error-message"> Field is required. </p>                                        
-                                    <label for="email">Email:</label>
-                                        <input id="email" type="email" name="email" placeholder="Email" aria-describedby="email-invalid" required>
-                                        <p id="email-invalid" class="error-message"> Valid email is required. </p>
-                                    <label for="message">Message:</label>
-                                        <input id="message" name="message" placeholder="Your message here" aria-describedby="message-empty" required></input>
-                                        <p id="message-empty" class="error-message"> Field is required. </p>
-                                        <button class="submit" type="submit">Submit</button>
+                                   <form id="contact" novalidate action="mailto:adunbar2@my.campus.edu" method="post" enctype="text/plain">
+                                <fieldset> 
+                                    <legend>Contact Form</legend>
+                                        <label for="first-name">First Name:</label>
+                                            <input id="first-name" type="text" name="first-name" placeholder="First Name" aria-describedby="first-name-empty" required>
+                                                <div id="first-name-empty" class="error-message"></div>                                        
+                                        <label for="last-name">Last Name:</label>
+                                            <input id="last-name" type="text" name="last-name" placeholder="Last Name" aria-describedby="last-name-empty" required>
+                                                <div id="last-name-empty" class="error-message"></div>
+                                        <label for="email">Email:</label>
+                                            <input id="email" type="email" name="email" placeholder="Email" aria-describedby="email-invalid" required>
+                                                <div id="email-invalid" class="error-message"></div>
+                                         <label for="message">Message:</label>
+                                                <textarea id="message" name="message" placeholder="Your message here" aria-describedby="message-empty" required></textarea>
+                                                <div id="message-empty" class="error-message"></div>
+                                                <div id="submission-success" class="success-message"></div>
+                                             <button class="submit" type="submit">Submit</button>
                                 </fieldset>    
                             </form>
                     </article>

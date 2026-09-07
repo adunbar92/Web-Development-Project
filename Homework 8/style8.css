@@ -114,6 +114,7 @@ grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
 }
 
+
 .favorites {
 
     list-style: none;
@@ -124,6 +125,30 @@ grid-template-columns: 1fr 1fr 1fr;
     list-style: none;
     font-family: "inter", sans-serif;
     padding: 0;
+}
+
+div.error-message {
+    font-family: "inter", sans-serif;
+    padding: 8px;
+    margin: 0 auto 8px auto;
+    color: rgb(218, 8, 8);
+    font-weight: bold;
+}
+
+div.success-message {
+    font-family: "inter", sans-serif;
+    padding: 8px;
+    margin: 0 auto 8px auto;
+    color: rgb(43, 221, 43);
+    font-weight: bold;
+}
+
+.success {
+    border-color: rgb(43, 221, 43);
+}
+
+.failure {
+    border-color: rgb(218, 8, 8);
 }
 
 article {
@@ -141,6 +166,7 @@ article {
 article.contact {
     margin: 48px auto 8px auto;
 }
+
 
 fieldset {
 
@@ -167,11 +193,6 @@ input, textarea {
     border-radius: 8px;
 }
 
-.valid-input {
-
-    border-color:rgb(0, 201, 84);
-    background-color: rgba(199, 255, 199, 0.842);
-}
 
 label {
     font-family: "inter", sans-serif;
@@ -187,63 +208,6 @@ button {
     background-color: rgba(223, 240, 245, 0.692);
     margin-top: 8px;
     font-weight: bold;
-}
-
-.error-message {
-  display: none;  
-}
-
-#first-name:user-invalid {
-    border: 4px;
-    border-style: solid;
-    border-color: rgb(255, 187, 0)
-}
-
-#last-name:user-invalid {
-    border: 4px;
-    border-style: solid;
-    border-color: rgb(255, 187, 0)
-}
-
-#email:user-invalid {
-    border: 4px;
-    border-style: solid;
-    border-color: rgb(255, 187, 0)
-}
-
-#message:user-invalid {
-    border: 4px;
-    border-style: solid;
-    border-color: rgb(255, 187, 0)
-}
-
-#first-name:user-invalid + .error-message {
-    font-weight: bold;
-    display: block;
-    color: rgb(255, 230, 0);
-    margin: 8px 0px 8px 0px;
-}
-
-#last-name:user-invalid + .error-message {
-    font-weight: bold;
-    display: block;
-    color: rgb(255, 230, 0);
-    margin: 8px 0px 8px 0px;
-}
-
-#email:user-invalid + #email-invalid {
-    font-weight: bold;
-    display: block;
-    color: rgb(255, 230, 0);
-    margin: 8px 0px 8px 0px;
-}
-
-
-#message:user-invalid + .error-message {
-    font-weight: bold;
-    display: block;
-    color: rgb(255, 230, 0);
-    margin: 8px 0px 8px 0px;
 }
 
 body {

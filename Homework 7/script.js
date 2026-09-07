@@ -27,9 +27,12 @@ const validateEmail = () =>{
    }
    if(!email.value.includes("@")){
     emailInvalid.textContent = "Email is invalid.";
+    email.classList.add("failure");
     return false;
    }
 
+   email.classList.remove("failure");
+   email.classList.add("success");
    emailInvalid.textContent = "";
    return true;
 }
