@@ -8,6 +8,8 @@ const emailInvalid = document.querySelector("#email-invalid")
 const message = document.querySelector("#message")
 const messageEmpty = document.querySelector("#message-empty")
 const submissionSuccess = document.querySelector("#submission-success")
+const addItemButton = document.querySelector("#add-item")
+const delItemButton = document.querySelector("#del-item")
 
 const validateForm = (inputBox, errorLabel, message) => {
    if(inputBox.value.trim() === "") {
@@ -36,7 +38,7 @@ const validateEmail = () =>{
    return true;
 }
 
-contactForm.addEventListener("submit", (event) => { 
+if (contactForm) {contactForm.addEventListener("submit", (event) => { 
     event.preventDefault();
     const isFirstNameValid =validateForm(firstName,firstNameEmpty,"First Name is required.");
     const isLastNameValid = validateForm(lastName,lastNameEmpty,"Last Name is required.");
@@ -51,18 +53,21 @@ contactForm.addEventListener("submit", (event) => {
     }
 
 });
+}
 
 const submitButtons = document.querySelectorAll("button");
 
+if (submitButtons) {
 submitButtons.forEach((button) => {
-button.addEventListener("click", () => {
-    button.textContent= "Clicked!";   
+    button.addEventListener("click", () => {
+        button.textContent= "Clicked!";   
+    });
 });
-});
-
+}
 const inputFields = document.querySelectorAll("input");
 const textareas = document.querySelectorAll("textarea");
 
+if (inputFields) {
 inputFields.forEach((input) => {
 input.addEventListener("input", () => {
     if(input.value.trim() !== "") {
@@ -74,8 +79,10 @@ input.addEventListener("input", () => {
     }
 });
 });
+}
 
 
+if (textareas) {
 textareas.forEach((textarea) => {
 textarea.addEventListener("input", () => {
     if(textarea.value.trim() !== "") {
@@ -87,18 +94,37 @@ textarea.addEventListener("input", () => {
     }
 });
 });
+}
 
 
-document.querySelector("#add-item").addEventListener("click", ()=> {
+if (addItemButton) {addItemButton.addEventListener("click", ()=> {
     let text= document.querySelector("#add").value; 
     let li = document.createElement("li"); 
     li.textContent =text; 
     document.querySelector(".favorites").appendChild(li);
 });
-
-document.querySelector("#del-item").addEventListener("click", ()=> {
-    let lastItem = document.querySelector(".favorites li:last-child"); 
-    if (lastItem) {
-    lastItem.remove();
 }
-});
+
+if (delItemButton) {
+    delItemButton.addEventListener("click", ()=> {
+        let lastItem = document.querySelector(".favorites li:last-child"); 
+        if (lastItem) {
+            lastItem.remove();
+        }
+    });
+}
+
+const url = "https://api.open-meteo.com/v1/forecast?latitude=42.36&longitude=-71.06&current=temperature_2m&temperature_unit=fahrenheit";
+let result =  document.querySelector("#weather-result");
+const loadButton = document.querySelector("#load") 
+  if (loadButton) {
+loadButton.addEventListener("click", () => {
+      fetch(url)
+        .then(res => {
+          if (!res.ok) throw new Error("Bad Status: " + res.status);
+          return res.json();
+        })
+        .then(data => { result.textContent = "Temp: " + data.current.temperature_2m + " F";})
+        .catch(() =>{result.textContent = "Sorry, couldn't load the data. Try again.";});
+    });
+}
