@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(5, 48, 49, 0.616);
+    width: 100%;
+    border: 2.5px;
+    padding: 20px;
+    margin: 0 auto 20px auto;
+    border-style: solid;
+    border-color: black;
+    border-radius: 8px;
+    color: aliceblue;
+}
+
+nav {
+    background-color:rgba(5, 48, 49, 0.616);
+    width: 100%;
+    border: 2.5px;
+    padding: 10px;
+    margin: 0 auto 20px auto;
+    border-style: solid;
+    border-color: black;
+    border-radius: 8px;
+}
+
+a {
+color: aliceblue;
+font-size: 1rem;
+}
+
+a:hover {
+color:rgb(142, 230, 236);
+}
+
+ul.navigation {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    list-style: none;
+
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    list-style: none;
+    gap: .5rem;
+    width: 100%;
+    margin: 40px auto 20px auto;
+}
+
+h1, h2, h3{
+
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+ul.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 95%;
+}
+}
+
+@media (min-width: 768px) {
+.gallery {
+grid-template-columns: 1fr 1fr;
+}
+}
+
+@media (min-width: 1200px) {
+.gallery {
+grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+.gallery img {
+    vertical-align:middle;
+    border-radius: 1rem;
+    max-width: 100%;
+}
+
+#main {
+    background-color: rgb(36, 75, 75);
+    width: 100%;
+    border: 2.5px;
+    padding: 20px;
+    margin: 0 auto 20px auto;
+    border-style: solid;
+    border-color: black;
+    border-radius: 8px;
+    color: aliceblue;
+}
+
+.mainheader {
+    background-color: rgba(4, 102, 116, 0.692);
+    width: 100%;
+    border: 2.5px;
+    padding: 20px;
+    margin: 0 auto 20px auto;
+    border-style: solid;
+    border-color: black;
+    border-radius: 8px;
+    color: aliceblue;
+}
+
+#main .content {
+    text-align: center;
+}
+
+.favorites {
+
+    list-style: none;
+}
+
+
+.contact ul {
+    list-style: none;
+    font-family: "inter", sans-serif;
+    padding: 0;
+}
+
+article {
+
+    padding: 24px;
+    margin: 24px auto 8px auto;
+    border: 2px;
+    background-color: lab(33.21% -15.93 -14.21);
+    border-radius: 16px;
+    border-style: solid;
+    border-color: black;
+
+}
+
+article.contact {
+    margin: 48px auto 8px auto;
+}
+
+fieldset {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: left;
+    border-radius: 8px;
+
+}
+
+fieldset legend {
+    font-family: "lora", serif;
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+input, textarea {
+    font-family: "inter", sans-serif;
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0px 8px 0px;
+    border-color: rgb(245, 243, 243);
+    border-radius: 8px;
+}
+
+.valid-input {
+
+    border-color:rgb(0, 201, 84);
+    background-color: rgba(199, 255, 199, 0.842);
+}
+
+label {
+    font-family: "inter", sans-serif;
+    font-size: .9rem;
+}
+
+
+input::placeholder, textarea::placeholder {
+    color:black;
+}
+
+button {
+    background-color: rgba(223, 240, 245, 0.692);
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.error-message {
+  display: none;  
+}
+
+#first-name:user-invalid {
+    border: 4px;
+    border-style: solid;
+    border-color: rgb(255, 187, 0)
+}
+
+#last-name:user-invalid {
+    border: 4px;
+    border-style: solid;
+    border-color: rgb(255, 187, 0)
+}
+
+#email:user-invalid {
+    border: 4px;
+    border-style: solid;
+    border-color: rgb(255, 187, 0)
+}
+
+#message:user-invalid {
+    border: 4px;
+    border-style: solid;
+    border-color: rgb(255, 187, 0)
+}
+
+#first-name:user-invalid + .error-message {
+    font-weight: bold;
+    display: block;
+    color: rgb(255, 230, 0);
+    margin: 8px 0px 8px 0px;
+}
+
+#last-name:user-invalid + .error-message {
+    font-weight: bold;
+    display: block;
+    color: rgb(255, 230, 0);
+    margin: 8px 0px 8px 0px;
+}
+
+#email:user-invalid + #email-invalid {
+    font-weight: bold;
+    display: block;
+    color: rgb(255, 230, 0);
+    margin: 8px 0px 8px 0px;
+}
+
+
+#message:user-invalid + .error-message {
+    font-weight: bold;
+    display: block;
+    color: rgb(255, 230, 0);
+    margin: 8px 0px 8px 0px;
+}
+
+body {
+    background-image: url("assets/background.jpg") ;
+    padding: 20px;
+}
